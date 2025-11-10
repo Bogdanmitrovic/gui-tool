@@ -5,6 +5,12 @@ plugins {
     id("org.jetbrains.compose")
 }
 
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(21)) // Set to a supported version
+    }
+}
+
 group = "org.bogdanmitrovic"
 version = "1.0-SNAPSHOT"
 
